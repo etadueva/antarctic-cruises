@@ -34,8 +34,16 @@ body {
 }
 
 a {
-  color: $color-default-black;
   text-decoration: none;
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  @include focus {
+    border: none;
+    outline: 1px solid $color-alice-blue;
+  }
 }
 
 img,

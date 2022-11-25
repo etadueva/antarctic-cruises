@@ -62,8 +62,12 @@ body {
 }
 
 a {
-  color: #000000;
   text-decoration: none;
+}
+
+a.focus-visible:focus {
+  border: none;
+  outline: 1px solid #f9fbfd;
 }
 
 img,
@@ -1274,5 +1278,11 @@ button.swiper-pagination-bullet {
   .social-list__item {
     margin-left: 0;
     margin-right: 16px;
+  }
+}
+
+@media (hover: hover) {
+  a:hover:not(.focus-visible) {
+    opacity: 0.5;
   }
 }
