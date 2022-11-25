@@ -1,0 +1,50 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: 57px;
+}
+
+.social-list__link {
+  display: block;
+  width: 20px;
+  height: 30px;
+}
+
+.social-list__icon {
+  margin: 5px 0;
+}
+
+.social-list__item {
+  margin-left: 24px;
+}
+
+@include tablet-width-max {
+  .social-list {
+    margin-top: 47px;
+  }
+
+  .social-list__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social-list__item {
+    margin-left: 17px;
+  }
+}
+
+@include mobile-width-max {
+  .social-list {
+    margin-top: 6px;
+    justify-content: start;
+  }
+
+  .social-list__item {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}

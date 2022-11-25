@@ -14,22 +14,59 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="page-header">
         <div class="container"></div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer-container">
+        <div class="footer-container__wrapper container">
+          <div class="footer-container__content">
+            <svg class="footer-container__logo logo" width="70" height="38">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <ul class="footer-container__list">
+              <li class="footer-container__item">
+                <a class="footer-container__link" href="#advantages">Преимущества</a>
+              </li>
+              <li class="footer-container__item">
+                <a class="footer-container__link" href="#catalog">Направления</a>
+              </li>
+              <li class="footer-container__item">
+                <a class="footer-container__link" href="#catalog">Ближайшие круизы</a>
+              </li>
+              <li class="footer-container__item">
+                <a class="footer-container__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-container__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
+                <svg class="social-list__icon icon-ok" width="12" height="20">
+                  <use href="./img/sprite.svg#social-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
+                <svg class="social-list__icon icon-social-yandex-zen" width="20" height="20">
+                  <use href="./img/sprite.svg#social-yandex-zen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
+                <svg class="social-list__icon icon-social-reddit" width="20" height="20">
+                  <use href="./img/sprite.svg#social-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
