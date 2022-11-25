@@ -1,13 +1,21 @@
 .advantages {
   min-height: 513px;
-  background-image: linear-gradient(rgba(227, 236, 246, 0.9) 30%, rgba(227, 236, 246, 0.9) 30%), url('../img/advantages-background/background-advantages.jpg');
+  background-image: url('../img/advantages-background/background-advantages.jpg');
+  background-color: $color-solitude;
+  background-repeat: no-repeat;
   background-size: 1366px;
-  background-position: 0 -196px;
+  background-position: center;
+
+  @include retina {
+    background-image: url('../img/advantages-background/background-advantages@2x.jpg');
+  }
 }
 
 .advantages__wrapper {
+  background-color: rgba(227, 236, 246, 0.9);
   padding-left: 103px;
   padding-right: 103px;
+  min-height: 513px;
 }
 
 .advantages__title {
@@ -27,11 +35,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .advantages__item {
   padding: 30px 30px 45px 30px;
   background-color: $color-alice-blue;
+  min-height: 241px;
 }
 
 .advantages__name {
@@ -47,4 +57,104 @@
   line-height: 140%;
   margin: 0;
   margin-top: 10px;
+}
+
+@include tablet-width-max {
+  .advantages {
+    min-height: 588px;
+    background-size: auto 588px;
+    background-color: #66a8e0;
+  }
+
+  .advantages__wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+    min-height: 588px;
+  }
+
+  .advantages__title {
+    font-size: 26px;
+    padding-top: 90px;
+  }
+
+  .advantages__list {
+    column-gap: 30px;
+    margin-top: 49px;
+  }
+
+  .advantages__item {
+    padding: 26px 16px 22px 20px;
+    min-height: 310px;
+  }
+
+  .advantages__icon {
+    &--liner {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--check-mark {
+      width: 27px;
+      height: 26px;
+    }
+
+    &--boat {
+      width: 36px;
+      height: 26px;
+    }
+  }
+
+  .advantages__name {
+    line-height: 148%;
+  }
+
+  .advantages__description {
+    margin-top: 8px;
+    line-height: 142%;
+
+    &--boat {
+      margin-top: 18px;
+    }
+  }
+}
+
+@include mobile-width-max {
+  .advantages {
+    background-size: auto 997px;
+    background-position: -10px;
+  }
+
+  .advantages__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    margin-bottom: 0;
+    padding-bottom: 34px;
+  }
+
+  .advantages__title {
+    font-size: 24px;
+    padding-top: 56px;
+  }
+
+  .advantages__item {
+    min-height: 250px;
+    padding: 25px 15px 20px 20px;
+    margin-bottom: 30px;
+  }
+
+  .advantages__name {
+    max-width: 170px;
+  }
+
+  .advantages__description {
+    &--boat {
+      margin-top: 8px;
+    }
+  }
 }
