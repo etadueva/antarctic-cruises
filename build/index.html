@@ -14,11 +14,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="page-header">
-        <div class="container"></div>
+      <header class="page-header page-header--close page-header--nojs">
+        <div class="page-header__wrapper container page-header__wrapper--close">
+          <div class="page-header__content-header">
+            <svg class="page-header__logo page-header__logo--close" width="70" height="38">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+            <button class="page-header__button page-header__button--close" type="button">
+              <span class="visually-hidden">Кнопка меню</span>
+            </button>
+          </div>
+          <ul class="page-header__list page-header__list--close">
+            <li class="page-header__item page-header__item--close">
+              <a class="page-header__link page-header__link--close" href="#advantages">Преимущества</a>
+            </li>
+            <li class="page-header__item page-header__item--close">
+              <a class="page-header__link page-header__link--close" href="#catalog">Направления</a>
+            </li>
+            <li class="page-header__item page-header__item--close">
+              <a class="page-header__link page-header__link--close" href="#catalog">Ближайшие круизы</a>
+            </li>
+            <li class="page-header__item page-header__item--close">
+              <a class="page-header__link page-header__link--close" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <main>
-        <section class="advantages">
+        <section class="promo">
+          <div class="promo__wrapper">
+            <h1 class="promo__title">Круизы в&nbsp;Антарктику</h1>
+            <span class="promo__desctription">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</span>
+          </div>
+        </section>
+        <section class="advantages" id="advantages">
           <div class="advantages__wrapper container">
             <h2 class="advantages__title">Преимущества</h2>
             <ul class="advantages__list">
