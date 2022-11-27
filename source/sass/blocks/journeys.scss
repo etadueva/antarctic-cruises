@@ -1,0 +1,99 @@
+.journeys {
+  min-height: 566px;
+}
+
+.journeys__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+}
+
+.journeys__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.journeys__description {
+  line-height: 150%;
+  padding-right: 25px;
+}
+
+.journeys__img {
+  margin-right: 0;
+}
+
+.journeys__text {
+  margin-top: 24px;
+}
+
+@include tablet-width-max {
+  .journeys {
+    min-height: 464px;
+  }
+
+  .journeys__wrapper {
+    padding-left: 45px;
+    padding-right: 50px;
+    padding-top: 91px;
+    grid-template-columns: 1fr 324px;
+    column-gap: 25px;
+  }
+
+  .journeys__title {
+    font-size: 26px;
+    line-height: 140%;
+    margin-top: 0;
+    width: 300px;
+  }
+
+  .journeys__description {
+    padding: 0;
+  }
+
+  .journeys__text {
+    margin-top: 14px;
+  }
+
+  .journeys__img {
+    margin-top: 9px;
+    width: 324px;
+    height: 174px;
+  }
+}
+
+@include mobile-width-max {
+  .journeys {
+    min-height: 440px;
+  }
+
+  .journeys__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 57px;
+  }
+
+  .journeys__title {
+    font-size: 24px;
+    width: 100%;
+    padding-right: 25px;
+  }
+
+  .journeys__img {
+    width: 290px;
+    height: 156px;
+    margin-top: 28px;
+    margin-bottom: 86px;
+  }
+
+  .journeys__text {
+    margin-top: 15px;
+  }
+}
