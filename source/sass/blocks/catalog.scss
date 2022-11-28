@@ -1,0 +1,333 @@
+.catalog {
+  background-color: $color-alice-blue;
+}
+
+.catalog__wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+.catalog__title {
+  color: $color-tangaroa;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0;
+  padding-top: 85px;
+}
+
+.catalog__list {
+  margin: 49px 15px 120px 15px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.catalog__item {
+  position: relative;
+  min-height: 386px;
+}
+
+.catalog__item-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 22px;
+  background-repeat: no-repeat;
+  background-color: $color-tangaroa;
+
+  &--astoria,
+  &--elaine {
+    background-image: url(../img/catalog/background-astoria.jpg);
+    background-position: -116px 0;
+    background-size: 503px 386px;
+
+    @include retina {
+      background-image: url(../img/catalog/background-astoria@2x.jpg);
+    }
+  }
+
+  &--atlantis {
+    background: url(../img/catalog/background-atlantis.jpg);
+    background-size: 515px 386px;
+    background-position: -128px;
+
+    @include retina {
+      background-image: url(../img/catalog/background-atlantis@2x.jpg);
+    }
+  }
+
+  &--odysseus {
+    background-image: url(../img/catalog/background-odysseus.jpg);
+    background-size: 560px 420px;
+    background-position: -120px 0;
+
+    @include retina {
+      background-image: url(../img/catalog/background-odysseus@2x.jpg);
+    }
+  }
+
+  &--olympia {
+    background-image: url(../img/catalog/background-olympia.jpg);
+    background-size: 553px 415px;
+    background-position: -117px 0;
+
+    @include retina {
+      background-image: url(../img/catalog/background-olympia@2x.jpg);
+    }
+  }
+
+  &--aurora {
+    background-image: url(../img/catalog/background-aurora.jpg);
+    background-size: 515px 386px;
+    background-position: -107px 0;
+
+    @include retina {
+      background-image: url(../img/catalog/background-aurora@2x.jpg);
+    }
+  }
+
+  &--leonor {
+    background-image: url(../img/catalog/background-leonor.jpg);
+    background-size: 515px 386px;
+    background-position: -147px 0;
+
+    @include retina {
+      background-image: url(../img/catalog/background-leonor@2x.jpg);
+    }
+  }
+
+  &--minion-1 {
+    background-image: url(../img/catalog/background-minion-1.jpg);
+    background-size: 696px 522px;
+    background-position: -178px 0;
+
+    @include retina {
+      background-image: url(../img/catalog/background-minion-1@2x.jpg);
+    }
+  }
+}
+
+.catalog__item-content {
+  background: $color-tangaroa;
+  position: absolute;
+  z-index: -1;
+  background-color: $color-tangaroa;
+  width: 100%;
+  height: 100%;
+  padding: 28px 25px 0;
+}
+
+.catalog__item-content:focus-within {
+  z-index: 2;
+}
+
+.catalog__title-item {
+  color: $color-alice-blue;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 8px;
+
+  &--content {
+    margin: 0;
+  }
+}
+
+.catalog__item {
+  @include hover {
+    .catalog__item-content {
+      z-index: 2;
+    }
+  }
+}
+
+.catalog__content-list {
+  padding: 0;
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 140%;
+  list-style-type: none;
+  color: $color-alice-blue;
+}
+
+.catalor__content-item {
+  display: block;
+  margin-bottom: 11px;
+}
+
+.catalog__content-title {
+  margin: 0;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.catalog__content-description {
+  font-weight: 400;
+}
+
+.catalog__item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: 0;
+  margin-top: 25px;
+  border: none;
+  background-color: $color-alice-blue;
+  color: $color-tangaroa;
+  font-family: $ff-montserrat;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  @include focus {
+    outline: none;
+    opacity: 0.5;
+  }
+}
+
+@include desktop-width-gap-max {
+  .catalog__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include desktop-width-gap-min {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog__item-cover {
+    background-position: center 0;
+  }
+}
+
+@include tablet-width-max {
+  .catalog__wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .catalog__title {
+    font-size: 26px;
+    padding-top: 90px;
+    font-weight: 600;
+  }
+
+  .catalog__item-cover {
+    padding: 28px;
+
+    &--astoria,
+    &--elaine {
+      background-position: -94px;
+    }
+
+    &--odysseus {
+      background-size: 599px 454px;
+      background-position: -106px 0;
+    }
+
+    &--olympia {
+      background-size: 600px 446px;
+      background-position: -146px 0;
+    }
+
+    &--leonor {
+      background-size: 605px 386px;
+      background-position: -170px 0;
+    }
+
+    &--minion-1 {
+      background-size: 825px 522px;
+      background-position: -210px 0;
+    }
+  }
+
+  .catalog__item-content {
+    padding: 28px 35px 0;
+  }
+}
+
+@include mobile-width-max {
+  .catalog__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .catalog__title {
+    padding-top: 57px;
+    font-size: 24px;
+  }
+
+  .catalog__list {
+    margin: 31px 10px 65px;
+    display: block;
+  }
+
+  .catalog__item {
+    margin-bottom: 30px;
+  }
+
+  .catalog__item-cover {
+    padding: 18px;
+
+    &--astoria,
+    &--elaine {
+      background-position: -113px;
+    }
+
+    &--odysseus {
+      background-size: 543px 454px;
+      background-position: -100px 0;
+    }
+
+    &--olympia {
+      background-size: 520px 446px;
+      background-position: -125px 0;
+    }
+
+    &--leonor {
+      background-size: 550px 386px;
+      background-position: -160px 0;
+    }
+
+    &--minion-1 {
+      background-size: 730px 522px;
+      background-position: -188px 0;
+    }
+  }
+
+  .catalog__item-button {
+    &--atlantis,
+    &--olimpia {
+      margin-top: 0;
+    }
+  }
+}
+
+@include tablet-width-gap-max {
+  .catalog__item-cover {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@include mobile-width-gap-max {
+  .catalog__item-cover {
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

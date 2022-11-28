@@ -49,3 +49,27 @@
     @content;
   }
 }
+
+@mixin desktop-width-gap-max {
+  @media (max-width: ($desktop-width-gap-max)) {
+    @content;
+  }
+}
+
+@mixin desktop-width-gap-min {
+  @media (max-width: ($desktop-width-gap-min)) {
+    @content;
+  }
+}
+
+@mixin mobile-width-gap-max {
+  @media (max-width: ($mobile-width-max)) and (min-width: ($mobile-width-gap-max)) {
+    @content;
+  }
+}
+
+@mixin tablet-width-gap-max {
+  @media (max-width: ($tablet-width-max)) and (min-width: ($tablet-width-gap-max)) {
+    @content;
+  }
+}
