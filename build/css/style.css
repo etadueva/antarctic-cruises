@@ -1341,8 +1341,9 @@ button.swiper-pagination-bullet {
 }
 
 .catalog__list {
-  margin: 49px 15px 120px 15px;
+  margin: 49px 15px 0 15px;
   padding: 0;
+  padding-bottom: 120px;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -1506,6 +1507,43 @@ button.swiper-pagination-bullet {
   background-size: 1366px 1025px;
   background-repeat: no-repeat;
   background-position: center -188px;
+}
+
+.form-container {
+  min-height: 555px;
+  background-color: #a1cbf5;
+  background-image: url("../img/form-background/background-form.jpg");
+  background-size: 1366px 911px;
+  background-repeat: no-repeat;
+  background-position: center -18px;
+}
+
+.form-container__wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container__title {
+  font-size: 40px;
+  line-height: 150%;
+  margin: 213px auto 0 60px;
+  color: #011c40;
+}
+
+.form-container__description {
+  display: block;
+  font-size: 18px;
+  line-height: 150%;
+  margin-left: 60px;
+  margin-top: 7px;
+  width: 390px;
+}
+
+.form {
+  width: 403px;
 }
 
 /* @mixin hover-focus {
@@ -1794,9 +1832,28 @@ button.swiper-pagination-bullet {
     padding: 28px 35px 0;
   }
 
+  .catalog__list {
+    padding-bottom: 100px;
+  }
+
   .wrapper__background-image {
     background-size: 851px 638px;
     background-position: center 0;
+  }
+
+  .form-container {
+    min-height: 805px;
+  }
+
+  .form-container__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form-container__title {
+    font-size: 34px;
   }
 }
 
@@ -2094,8 +2151,9 @@ button.swiper-pagination-bullet {
   }
 
   .catalog__list {
-    margin: 31px 10px 65px;
+    margin: 31px 10px 0;
     display: block;
+    padding-bottom: 35px;
   }
 
   .catalog__item {
@@ -2138,6 +2196,18 @@ button.swiper-pagination-bullet {
 
   .wrapper__background-image {
     background-size: 757px 568px;
+  }
+
+  .form-container {
+    min-height: 760px;
+  }
+
+  .form-container__title {
+    font-size: 24px;
+  }
+
+  .form-container__description {
+    font-size: 16px;
   }
 }
 

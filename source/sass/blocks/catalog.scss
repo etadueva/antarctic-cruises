@@ -17,8 +17,9 @@
 }
 
 .catalog__list {
-  margin: 49px 15px 120px 15px;
+  margin: 49px 15px 0 15px;
   padding: 0;
+  padding-bottom: 120px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -257,6 +258,10 @@
   .catalog__item-content {
     padding: 28px 35px 0;
   }
+
+  .catalog__list {
+    padding-bottom: 100px;
+  }
 }
 
 @include mobile-width-max {
@@ -271,8 +276,9 @@
   }
 
   .catalog__list {
-    margin: 31px 10px 65px;
+    margin: 31px 10px 0;
     display: block;
+    padding-bottom: 35px;
   }
 
   .catalog__item {
