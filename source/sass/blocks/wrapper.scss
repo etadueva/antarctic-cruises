@@ -1,0 +1,29 @@
+.wrapper {
+  background: linear-gradient(180deg, rgba(55,119,198,1) 99%, rgba(249,251,253,1) 100%);
+  background-size: auto 655px;
+  background-repeat: no-repeat;
+}
+
+.wrapper__background-image {
+  background-image: url('../img/promo-background/background-promo.jpg');
+  background-size: 1366px 1025px;
+  background-repeat: no-repeat;
+  background-position: center -188px;
+
+  @include retina {
+    background-image: url('../img/promo-background/background-promo@2x.jpg');
+  }
+}
+
+@include tablet-width-max {
+  .wrapper__background-image {
+    background-size: 851px 638px;
+    background-position: center 0;
+  }
+}
+
+@include mobile-width-max {
+  .wrapper__background-image {
+    background-size: 757px 568px;
+  }
+}

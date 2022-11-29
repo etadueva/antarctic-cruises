@@ -1207,7 +1207,7 @@ button.swiper-pagination-bullet {
 }
 
 .page-header {
-  background-color: #3270c6;
+  background-color: rgba(255, 255, 255, 0);
   min-height: 108px;
 }
 
@@ -1254,7 +1254,7 @@ button.swiper-pagination-bullet {
 }
 
 .promo {
-  background-color: #3270c6;
+  background-color: rgba(255, 255, 255, 0);
   min-height: 542px;
   -webkit-box-shadow: 0 4px 4px rgba(1, 28, 64, 0.25);
   box-shadow: 0 4px 4px rgba(1, 28, 64, 0.25);
@@ -1285,6 +1285,7 @@ button.swiper-pagination-bullet {
 
 .journeys {
   min-height: 566px;
+  background-color: #f9fbfd;
 }
 
 .journeys__wrapper {
@@ -1490,6 +1491,21 @@ button.swiper-pagination-bullet {
 .catalog__item-button.focus-visible:focus {
   outline: none;
   opacity: 0.5;
+}
+
+.wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(99%, rgb(55, 119, 198)), to(rgb(249, 251, 253)));
+  background: -o-linear-gradient(top, rgb(55, 119, 198) 99%, rgb(249, 251, 253) 100%);
+  background: linear-gradient(180deg, rgb(55, 119, 198) 99%, rgb(249, 251, 253) 100%);
+  background-size: auto 655px;
+  background-repeat: no-repeat;
+}
+
+.wrapper__background-image {
+  background-image: url("../img/promo-background/background-promo.jpg");
+  background-size: 1366px 1025px;
+  background-repeat: no-repeat;
+  background-position: center -188px;
 }
 
 /* @mixin hover-focus {
@@ -1776,6 +1792,11 @@ button.swiper-pagination-bullet {
 
   .catalog__item-content {
     padding: 28px 35px 0;
+  }
+
+  .wrapper__background-image {
+    background-size: 851px 638px;
+    background-position: center 0;
   }
 }
 
@@ -2114,6 +2135,10 @@ button.swiper-pagination-bullet {
   .catalog__item-button--olimpia {
     margin-top: 0;
   }
+
+  .wrapper__background-image {
+    background-size: 757px 568px;
+  }
 }
 
 @media (max-width: 1023px) and (min-width: 968px) {
@@ -2178,5 +2203,9 @@ button.swiper-pagination-bullet {
 
   .catalog__item-cover--minion-1 {
     background-image: url(../img/catalog/background-minion-1@2x.jpg);
+  }
+
+  .wrapper__background-image {
+    background-image: url("../img/promo-background/background-promo@2x.jpg");
   }
 }
