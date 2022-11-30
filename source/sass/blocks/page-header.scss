@@ -17,7 +17,7 @@
 .page-header__logo {
   margin-top: 35px;
   fill: $color-alice-blue;
-  filter: drop-shadow( 0 4px 4px rgba(1, 28, 64, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(1, 28, 64, 0.25));
 }
 
 .page-header__list {
@@ -131,13 +131,13 @@
     &--close {
       width: 24px;
       height: 14px;
-      background: url('../img/svg/button-menu-burger.svg'), $color-transparent;
+      background: url("../img/svg/button-menu-burger.svg"), $color-transparent;
     }
 
     &--open {
       width: 15px;
       height: 15px;
-      background: url('../img/svg/button-menu-cross.svg'), $color-transparent;
+      background: url("../img/svg/button-menu-cross.svg"), $color-transparent;
     }
   }
 

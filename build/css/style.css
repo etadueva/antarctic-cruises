@@ -1374,43 +1374,43 @@ button.swiper-pagination-bullet {
 
 .catalog__item-cover--astoria,
 .catalog__item-cover--elaine {
-  background-image: url(../img/catalog/background-astoria.jpg);
+  background-image: url("../img/catalog/background-astoria.jpg");
   background-position: -116px 0;
   background-size: 503px 386px;
 }
 
 .catalog__item-cover--atlantis {
-  background: url(../img/catalog/background-atlantis.jpg);
+  background: url("../img/catalog/background-atlantis.jpg");
   background-size: 515px 386px;
   background-position: -128px;
 }
 
 .catalog__item-cover--odysseus {
-  background-image: url(../img/catalog/background-odysseus.jpg);
+  background-image: url("../img/catalog/background-odysseus.jpg");
   background-size: 560px 420px;
   background-position: -120px 0;
 }
 
 .catalog__item-cover--olympia {
-  background-image: url(../img/catalog/background-olympia.jpg);
+  background-image: url("../img/catalog/background-olympia.jpg");
   background-size: 553px 415px;
   background-position: -117px 0;
 }
 
 .catalog__item-cover--aurora {
-  background-image: url(../img/catalog/background-aurora.jpg);
+  background-image: url("../img/catalog/background-aurora.jpg");
   background-size: 515px 386px;
   background-position: -107px 0;
 }
 
 .catalog__item-cover--leonor {
-  background-image: url(../img/catalog/background-leonor.jpg);
+  background-image: url("../img/catalog/background-leonor.jpg");
   background-size: 515px 386px;
   background-position: -147px 0;
 }
 
 .catalog__item-cover--minion-1 {
-  background-image: url(../img/catalog/background-minion-1.jpg);
+  background-image: url("../img/catalog/background-minion-1.jpg");
   background-size: 696px 522px;
   background-position: -178px 0;
 }
@@ -2547,7 +2547,7 @@ button.swiper-pagination-bullet {
     height: 316px;
     margin-top: 36px;
     background-size: 550px 316px;
-    background-position: -130px 0px;
+    background-position: -130px 0;
   }
 
   .contacts__title {
@@ -2602,31 +2602,31 @@ button.swiper-pagination-bullet {
 
   .catalog__item-cover--astoria,
   .catalog__item-cover--elaine {
-    background-image: url(../img/catalog/background-astoria@2x.jpg);
+    background-image: url("../img/catalog/background-astoria@2x.jpg");
   }
 
   .catalog__item-cover--atlantis {
-    background-image: url(../img/catalog/background-atlantis@2x.jpg);
+    background-image: url("../img/catalog/background-atlantis@2x.jpg");
   }
 
   .catalog__item-cover--odysseus {
-    background-image: url(../img/catalog/background-odysseus@2x.jpg);
+    background-image: url("../img/catalog/background-odysseus@2x.jpg");
   }
 
   .catalog__item-cover--olympia {
-    background-image: url(../img/catalog/background-olympia@2x.jpg);
+    background-image: url("../img/catalog/background-olympia@2x.jpg");
   }
 
   .catalog__item-cover--aurora {
-    background-image: url(../img/catalog/background-aurora@2x.jpg);
+    background-image: url("../img/catalog/background-aurora@2x.jpg");
   }
 
   .catalog__item-cover--leonor {
-    background-image: url(../img/catalog/background-leonor@2x.jpg);
+    background-image: url("../img/catalog/background-leonor@2x.jpg");
   }
 
   .catalog__item-cover--minion-1 {
-    background-image: url(../img/catalog/background-minion-1@2x.jpg);
+    background-image: url("../img/catalog/background-minion-1@2x.jpg");
   }
 
   .wrapper__background-image {

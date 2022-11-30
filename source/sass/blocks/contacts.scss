@@ -13,7 +13,7 @@
 .contacts__map {
   height: 306px;
   margin-top: 120px;
-  background-image: url('../img/map-background/background-map.jpg');
+  background-image: url("../img/map-background/background-map.jpg");
   background-size: 560px 318px;
   background-position: 0;
   background-repeat: no-repeat;
@@ -53,11 +53,11 @@
 
 .contacts__info {
   margin-left: 10px;
-    margin-top: 1px;
+  margin-top: 1px;
 }
 
 @include desktop-width-min {
-  .contacts__info br{
+  .contacts__info br {
     display: none;
   }
 }
@@ -129,10 +129,10 @@
     height: 316px;
     margin-top: 36px;
     background-size: 550px 316px;
-    background-position: -130px 0px;
+    background-position: -130px 0;
   }
 
   .contacts__title {
     margin-top: 57px;
-}
+  }
 }

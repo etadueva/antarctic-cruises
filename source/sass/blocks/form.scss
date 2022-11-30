@@ -163,7 +163,7 @@
 }
 
 .form__input--checkbox:checked ~ .form__text-checkbox::after {
-  background-image: url('../img/form-background/check-box.png');
+  background-image: url("../img/form-background/check-box.png");
   background-repeat: no-repeat;
   background-position: center;
 }

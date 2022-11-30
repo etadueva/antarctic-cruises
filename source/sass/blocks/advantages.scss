@@ -1,13 +1,13 @@
 .advantages {
   min-height: 562px;
-  background-image: url('../img/advantages-background/background-advantages.jpg');
+  background-image: url("../img/advantages-background/background-advantages.jpg");
   background-color: $color-solitude;
   background-repeat: no-repeat;
   background-size: 1366px;
   background-position: center;
 
   @include retina {
-    background-image: url('../img/advantages-background/background-advantages@2x.jpg');
+    background-image: url("../img/advantages-background/background-advantages@2x.jpg");
   }
 }
 
