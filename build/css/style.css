@@ -1606,7 +1606,9 @@ button.swiper-pagination-bullet {
   min-height: 18px;
   margin: 0;
   padding: 0;
-  z-index: -1;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .form__text-checkbox {
@@ -1636,6 +1638,12 @@ button.swiper-pagination-bullet {
   line-height: 150%;
   min-height: 43px;
   margin-top: 10px;
+}
+
+.form__input--checkbox:checked ~ .form__text-checkbox::after {
+  background-image: url("../img/form-background/check-box.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* @mixin hover-focus {
@@ -1678,6 +1686,12 @@ button.swiper-pagination-bullet {
     }
   }
 */
+
+@media (min-width: 321px) {
+  .form__text-checkbox br {
+    display: none;
+  }
+}
 
 @media (min-width: 1023px) {
   .form-container__description br {
@@ -1971,6 +1985,10 @@ button.swiper-pagination-bullet {
 
   .form {
     margin: 53px auto 0 auto;
+  }
+
+  .form__input {
+    padding-left: 18px;
   }
 }
 
@@ -2317,6 +2335,9 @@ button.swiper-pagination-bullet {
 
   .form-container {
     min-height: 760px;
+    background-size: 1209px 806px;
+    background-position: -485px -46px;
+    background-color: #adacba;
   }
 
   .form-container__wrapper {
@@ -2341,6 +2362,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding: 32px 30px;
     margin-top: 35px;
+    padding-bottom: 41px;
   }
 
   .form__description {
@@ -2353,22 +2375,33 @@ button.swiper-pagination-bullet {
     margin-top: 30px;
   }
 
+  .form__input {
+    padding-top: 2px;
+    padding-left: 17px;
+  }
+
   .form__input--checkbox {
     display: block;
-    width: 20px;
+    width: 100%;
     height: 20px;
     margin-left: 5px;
   }
 
   .form__text-checkbox {
-    margin-top: 0;
+    margin-top: -2px;
+    margin-left: 28px;
+    line-height: 120%;
   }
 
   .form__text-checkbox::after {
     width: 20px;
     height: 20px;
-    top: 0;
-    left: -19px;
+    top: 1px;
+    left: -28px;
+  }
+
+  .form__button {
+    margin-top: 6px;
   }
 }
 

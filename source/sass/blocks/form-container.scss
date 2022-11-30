@@ -71,6 +71,9 @@
 @include mobile-width-max {
   .form-container {
     min-height: 760px;
+    background-size: 1209px 806px;
+    background-position: -485px -46px;
+    background-color: $color-blue-haze;
   }
 
   .form-container__wrapper {

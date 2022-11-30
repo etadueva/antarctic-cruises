@@ -56,6 +56,13 @@
   }
 }
 
+
+@mixin desktop-tablet-brackpoint {
+  @media (min-width: ($mobile-width-min)) {
+    @content;
+  }
+}
+
 @mixin mobile-width-max {
   @media (max-width: ($mobile-width-max)) {
     @content;
