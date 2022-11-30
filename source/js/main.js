@@ -1,11 +1,16 @@
 import {switchMenu} from './modules/header-menu';
+import SmoothScroll from 'smooth-scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
+  let scroll = new SmoothScroll('a[href*="#"]');
+  const scrollSmooth = () => {
+    return scroll;
+  };
 
   // Utils
   // ---------------------------------
 
-
+  scrollSmooth();
   // Modules
   // ---------------------------------
 
