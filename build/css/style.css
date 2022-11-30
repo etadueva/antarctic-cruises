@@ -1611,6 +1611,11 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
+.form__input.focus-visible:focus {
+  outline: none;
+  background-color: rgba(161, 203, 245, 0.7);
+}
+
 .form__text-checkbox {
   font-size: 10px;
   line-height: 130%;
@@ -1640,10 +1645,19 @@ button.swiper-pagination-bullet {
   margin-top: 10px;
 }
 
+.form__button.focus-visible:focus {
+  outline: none;
+  opacity: 0.5;
+}
+
 .form__input--checkbox:checked ~ .form__text-checkbox::after {
   background-image: url("../img/form-background/check-box.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form__input--checkbox:focus + .form__text-checkbox::after {
+  border: 3px solid #a1cbf5;
 }
 
 .contacts {
@@ -2631,5 +2645,13 @@ button.swiper-pagination-bullet {
 
   .wrapper__background-image {
     background-image: url("../img/promo-background/background-promo@2x.jpg");
+  }
+
+  .form-container {
+    background-image: url("../img/form-background/background-form@2x.jpg");
+  }
+
+  .contacts__map {
+    background-image: url("../img/map-background/background-map@2x.jpg");
   }
 }

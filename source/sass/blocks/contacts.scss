@@ -17,6 +17,10 @@
   background-size: 560px 318px;
   background-position: 0;
   background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/map-background/background-map@2x.jpg");
+  }
 }
 
 .contacts__map iframe {

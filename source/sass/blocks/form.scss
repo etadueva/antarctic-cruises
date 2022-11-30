@@ -55,6 +55,11 @@
     opacity: 0;
     cursor: pointer;
   }
+
+  @include focus {
+    outline: none;
+    background-color: rgba(161, 203, 245, 0.7);
+  }
 }
 
 .form__text-checkbox {
@@ -84,6 +89,11 @@
   line-height: 150%;
   min-height: 43px;
   margin-top: 10px;
+
+  @include focus {
+    outline: none;
+    opacity: 0.5;
+  }
 }
 
 @include desktop-width-min {
@@ -166,4 +176,8 @@
   background-image: url("../img/form-background/check-box.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form__input--checkbox:focus + .form__text-checkbox::after {
+  border: 3px solid $color-polo-blue;
 }
