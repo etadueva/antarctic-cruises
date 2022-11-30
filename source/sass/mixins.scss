@@ -44,6 +44,18 @@
   }
 }
 
+@mixin tablet-brackpoint {
+  @media (max-width: ($tablet-width-max)) and (min-width: ($mobile-width-max)) {
+    @content;
+  }
+}
+
+@mixin desktop-width-min {
+  @media (min-width: ($tablet-width-max)) {
+    @content;
+  }
+}
+
 @mixin mobile-width-max {
   @media (max-width: ($mobile-width-max)) {
     @content;

@@ -30,17 +30,41 @@
   width: 390px;
 }
 
+@include desktop-width-min {
+  .form-container__description br {
+    display: none;
+  }
+}
+
 @include tablet-width-max {
   .form-container {
     min-height: 805px;
+    background-size: 1481px 987px;
+    background-position: -502px -12px;
   }
 
   .form-container__wrapper {
     flex-direction: column;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .form-container__title {
     font-size: 34px;
+    text-align: center;
+    margin: 87px auto 0 auto;
+  }
+
+  .form-container__description {
+    text-align: center;
+    margin: 5px auto 0 auto;
+
+  }
+}
+
+@include tablet-brackpoint {
+  .form-container__description br {
+    display: none;
   }
 }
 
@@ -49,11 +73,21 @@
     min-height: 760px;
   }
 
+  .form-container__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .form-container__title {
     font-size: 24px;
+    line-height: 140%;
+    margin-top: 56px;
   }
 
   .form-container__description {
     font-size: 16px;
+    width: 100%;
+    line-height: 140%;
+    margin-top: 11px;
   }
 }
