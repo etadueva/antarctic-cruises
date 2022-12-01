@@ -14,6 +14,14 @@
   display: flex;
 }
 
+.footer-container__link-logo {
+  cursor: default;
+
+  @include hover {
+    opacity: 1;
+  }
+}
+
 .footer-container__logo {
   color: $color-alice-blue;
   margin-top: 50px;

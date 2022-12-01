@@ -43,7 +43,6 @@
   height: 100%;
   display: flex;
   align-items: flex-end;
-  padding: 22px;
   background-repeat: no-repeat;
   background-color: $color-tangaroa;
 
@@ -121,11 +120,11 @@
 
 .catalog__item-content {
   background: $color-tangaroa;
-  position: absolute;
+  position: relative;
   z-index: -1;
   background-color: $color-tangaroa;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 28px 25px 0;
 }
 
@@ -178,6 +177,7 @@
   min-height: 40px;
   padding: 0;
   margin-top: 25px;
+  margin-bottom: 5px;
   border: none;
   background-color: $color-alice-blue;
   color: $color-tangaroa;
@@ -193,6 +193,25 @@
   @include focus {
     outline: none;
     opacity: 0.5;
+  }
+}
+
+.catalog__button-cover {
+  display: flex;
+  border: none;
+  padding: 22px;
+  width: 100%;
+  height: 100%;
+  background-color: $color-transparent;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  line-height: 150%;
+  align-items: flex-end;
+  justify-content: start;
+  user-select: none;
+
+  @include focus {
+    outline: 2px solid $color-tangaroa;
   }
 }
 
@@ -225,8 +244,6 @@
   }
 
   .catalog__item-cover {
-    padding: 28px;
-
     &--astoria,
     &--elaine {
       background-position: -94px;
@@ -251,6 +268,10 @@
       background-size: 825px 522px;
       background-position: -210px 0;
     }
+  }
+
+  .catalog__button-cover {
+    padding: 28px;
   }
 
   .catalog__item-content {
@@ -284,8 +305,6 @@
   }
 
   .catalog__item-cover {
-    padding: 18px;
-
     &--astoria,
     &--elaine {
       background-position: -113px;
@@ -310,6 +329,10 @@
       background-size: 730px 522px;
       background-position: -188px 0;
     }
+  }
+
+  .catalog__button-cover {
+    padding: 18px;
   }
 
   .catalog__item-content {

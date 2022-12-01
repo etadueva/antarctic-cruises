@@ -26,4 +26,11 @@
   .wrapper__background-image {
     background-size: 757px 568px;
   }
+
+  .wrapper {
+    &--open {
+      position: fixed;
+      overflow-y: hidden;
+    }
+  }
 }

@@ -18,9 +18,12 @@
         <header class="page-header page-header--close page-header--nojs">
           <div class="page-header__wrapper container page-header__wrapper--close">
             <div class="page-header__content-header">
-              <svg class="page-header__logo page-header__logo--close" width="70" height="38">
-                <use href="./img/sprite.svg#logo"></use>
-              </svg>
+              <a class="page-header__link-logo">
+                <h3 class="visually-hidden">Логотип компании</h3>
+                <svg class="page-header__logo page-header__logo--close" width="70" height="38">
+                  <use href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
               <button class="page-header__button page-header__button--close" type="button">
                 <span class="visually-hidden">Кнопка меню</span>
               </button>
@@ -98,7 +101,9 @@
               <ul class="catalog__list">
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--astoria">
-                    <h3 class="catalog__title-item">Круиз “Астория”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Астория”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Астория”</h3>
@@ -125,7 +130,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--elaine">
-                    <h3 class="catalog__title-item">Круиз “Элайн”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Элайн”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Элайн”</h3>
@@ -152,7 +159,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--atlantis">
-                    <h3 class="catalog__title-item">Круиз “Атлантис”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Атлантис”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Атлантис”</h3>
@@ -179,7 +188,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--odysseus">
-                    <h3 class="catalog__title-item">Круиз “Одиссей”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Одиссей”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Одиссей”</h3>
@@ -206,7 +217,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--olympia">
-                    <h3 class="catalog__title-item">Круиз “Олимпия”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Олимпия”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Олимпия”</h3>
@@ -233,7 +246,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--aurora">
-                    <h3 class="catalog__title-item">Круиз “Аврора”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Аврора”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Аврора”</h3>
@@ -260,7 +275,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--leonor">
-                    <h3 class="catalog__title-item">Круиз “Леонор”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Леонор”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Леонор”</h3>
@@ -287,7 +304,9 @@
                 </li>
                 <li class="catalog__item">
                   <div class="catalog__item-cover catalog__item-cover--minion-1">
-                    <h3 class="catalog__title-item">Круиз “Минион - 1”</h3>
+                    <button class="catalog__button-cover" type="button">
+                      <span class="catalog__title-item">Круиз “Минион - 1”</span>
+                    </button>
                   </div>
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Минион - 1”</h3>
@@ -344,7 +363,7 @@
               </form>
             </div>
           </section>
-          <section class="contacts">
+          <section class="contacts" id="contacts">
             <div class="contacts__wrapper container">
               <div class="contacts__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8"></iframe>
@@ -356,13 +375,15 @@
                     <svg class="contacts__icon" width="18" height="21">
                       <use href="./img/sprite.svg#map-mark"></use>
                     </svg>
-                    <span class="contacts__info">г.&nbsp;Санкт Петербург, <br>ул.&nbsp;Большая Конюшенная, 19/8</span>
+                    <span class="contacts__info contacts__info--address">г.&nbsp;Санкт Петербург, <br>ул.&nbsp;Большая Конюшенная, 19/8</span>
                   </li>
                   <li class="contacts__item">
-                    <svg class="contacts__icon contacts__icon--phone" width="18" height="18">
-                      <use href="./img/sprite.svg#map-phone"></use>
-                    </svg>
-                    <span class="contacts__info">8-800-200-00-00</span>
+                    <a class="contacts__link" href="tel:88002000000">
+                      <svg class="contacts__icon contacts__icon--phone" width="18" height="18">
+                        <use href="./img/sprite.svg#map-phone"></use>
+                      </svg>
+                      <span class="contacts__info contacts__info--phone">8&#8209;800&#8209;200&#8209;00&#8209;00</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -372,9 +393,12 @@
         <footer class="footer-container">
           <div class="footer-container__wrapper container">
             <div class="footer-container__content">
-              <svg class="footer-container__logo logo" width="70" height="38">
-                <use href="./img/sprite.svg#logo"></use>
-              </svg>
+              <a class="footer-container__link-logo">
+                <h3 class="visually-hidden">Логотип компании</h3>
+                <svg class="footer-container__logo logo" width="70" height="38">
+                  <use href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
               <ul class="footer-container__list">
                 <li class="footer-container__item">
                   <a class="footer-container__link" href="#advantages">Преимущества</a>
@@ -391,7 +415,7 @@
               </ul>
             </div>
             <ul class="footer-container__social social-list">
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--ok">
                 <a class="social-list__link" href="#">
                   <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
                   <svg class="social-list__icon icon-ok" width="12" height="20">
@@ -399,7 +423,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--yandex-zen">
                 <a class="social-list__link" href="#">
                   <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
                   <svg class="social-list__icon icon-social-yandex-zen" width="20" height="20">
@@ -407,7 +431,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--reddit">
                 <a class="social-list__link" href="#">
                   <h4 class="visually-hidden">Ссылка на социальную сеть</h4>
                   <svg class="social-list__icon icon-social-reddit" width="20" height="20">

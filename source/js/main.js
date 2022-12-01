@@ -1,4 +1,5 @@
 import {switchMenu} from './modules/header-menu';
+import {showCard} from './modules/tuch-event';
 import SmoothScroll from 'smooth-scroll';
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   switchMenu();
+  showCard();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
