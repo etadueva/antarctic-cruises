@@ -30,11 +30,11 @@
   position: relative;
   min-height: 386px;
 
-  // @include hover {
-  //   .catalog__item-content {
-  //     z-index: 2;
-  //   }
-  // }
+  @include hover {
+    .catalog__item-content {
+      z-index: 2;
+    }
+  }
 }
 
 .catalog__item-cover {
@@ -128,7 +128,7 @@
   padding: 28px 25px 0;
 
   &--max-index {
-    z-index: 5;
+    z-index: 2;
   }
 }
 
@@ -347,6 +347,7 @@
 
   .catalog__item-content {
     padding: 28px 25px;
+    min-height: 386px;
   }
 
   .catalog__item-button {

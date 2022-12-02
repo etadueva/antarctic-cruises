@@ -61,6 +61,13 @@ const switchMenu = () => {
       closeMenu();
     }
   }, {passive: true});
+
+  document.addEventListener('click', (e) => {
+    let headerOpen = document.querySelector('.page-header--open');
+    if (headerOpen.is(e.target) && headerOpen.has(e.target).length === 0) {
+      closeMenu();
+    }
+  }, {passive: true});
 };
 
 export {switchMenu};

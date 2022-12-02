@@ -1450,7 +1450,7 @@ button.swiper-pagination-bullet {
 }
 
 .catalog__item-content--max-index {
-  z-index: 5;
+  z-index: 2;
 }
 
 .catalog__item-content:focus-within {
@@ -2563,6 +2563,7 @@ button.swiper-pagination-bullet {
 
   .catalog__item-content {
     padding: 28px 25px;
+    min-height: 386px;
   }
 
   .catalog__item-button--atlantis,
@@ -2717,6 +2718,10 @@ button.swiper-pagination-bullet {
 
   .page-header__link-logo:hover:not(.focus-visible) {
     opacity: 1;
+  }
+
+  .catalog__item:hover:not(.focus-visible) .catalog__item-content {
+    z-index: 2;
   }
 
   .catalog__item-button:hover:not(.focus-visible) {
