@@ -30,11 +30,11 @@
   position: relative;
   min-height: 386px;
 
-  @include hover {
-    .catalog__item-content {
-      z-index: 2;
-    }
-  }
+  // @include hover {
+  //   .catalog__item-content {
+  //     z-index: 2;
+  //   }
+  // }
 }
 
 .catalog__item-cover {
@@ -126,6 +126,10 @@
   width: 100%;
   min-height: 100%;
   padding: 28px 25px 0;
+
+  &--max-index {
+    z-index: 5;
+  }
 }
 
 .catalog__item-content:focus-within {
@@ -212,6 +216,12 @@
 
   @include focus {
     outline: 2px solid $color-tangaroa;
+  }
+
+  @include active {
+    .catalog__item-content {
+      z-index: 2;
+    }
   }
 }
 

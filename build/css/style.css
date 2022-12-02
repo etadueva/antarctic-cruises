@@ -1449,6 +1449,10 @@ button.swiper-pagination-bullet {
   padding: 28px 25px 0;
 }
 
+.catalog__item-content--max-index {
+  z-index: 5;
+}
+
 .catalog__item-content:focus-within {
   z-index: 2;
 }
@@ -1545,6 +1549,10 @@ button.swiper-pagination-bullet {
 
 .catalog__button-cover.focus-visible:focus {
   outline: 2px solid #011c40;
+}
+
+.catalog__button-cover.focus-visible:active .catalog__item-content {
+  z-index: 2;
 }
 
 .wrapper {
@@ -2709,10 +2717,6 @@ button.swiper-pagination-bullet {
 
   .page-header__link-logo:hover:not(.focus-visible) {
     opacity: 1;
-  }
-
-  .catalog__item:hover:not(.focus-visible) .catalog__item-content {
-    z-index: 2;
   }
 
   .catalog__item-button:hover:not(.focus-visible) {
