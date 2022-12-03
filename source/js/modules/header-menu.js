@@ -7,6 +7,13 @@ let items = document.querySelectorAll('.page-header__item');
 let wrapper = document.querySelector('.wrapper');
 let wrapperMenu = document.querySelector('.page-header__wrapper');
 
+const clickOutside = (e) => {
+  let headerOpen = document.querySelector('.page-header--open');
+  if (!headerOpen.contains(e.target)) {
+    closeMenu();
+  }
+};
+
 const closeMenu = () => {
   button.classList.add('page-header__button--close');
   button.classList.remove('page-header__button--open');
@@ -27,6 +34,7 @@ const closeMenu = () => {
     element.classList.add('page-header__item--close');
     element.classList.remove('page-header__item--open');
   });
+  document.removeEventListener('click', clickOutside, {passive: true});
 };
 
 const openMenu = () => {
@@ -49,6 +57,7 @@ const openMenu = () => {
     element.classList.remove('page-header__item--close');
     element.classList.add('page-header__item--open');
   });
+  document.addEventListener('click', clickOutside, {passive: true});
 };
 
 const switchMenu = () => {
@@ -58,13 +67,6 @@ const switchMenu = () => {
     if (button.classList.contains('page-header__button--close')) {
       openMenu();
     } else {
-      closeMenu();
-    }
-  }, {passive: true});
-
-  document.addEventListener('click', (e) => {
-    let headerOpen = document.querySelector('.page-header--open');
-    if (headerOpen.is(e.target) && headerOpen.has(e.target).length === 0) {
       closeMenu();
     }
   }, {passive: true});
