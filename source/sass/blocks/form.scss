@@ -47,7 +47,7 @@
   padding-top: 5px;
 
   @include hover {
-    opacity: 0.5;
+    outline: 2px solid $color-curious-blue;
   }
 
   @include focus {
@@ -114,6 +114,12 @@
 @include desktop-width-min {
   .form__description br {
     display: none;
+  }
+}
+
+@include desktop-width-form {
+  .form {
+    margin-right: 0;
   }
 }
 

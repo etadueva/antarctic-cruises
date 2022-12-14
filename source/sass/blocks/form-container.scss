@@ -2,9 +2,9 @@
   min-height: 555px;
   background-color: $color-polo-blue;
   background-image: url("../img/form-background/background-form.jpg");
-  background-size: 1366px 911px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -18px;
+  background-position: center;
 
   @include retina {
     background-image: url("../img/form-background/background-form@2x.jpg");
@@ -31,7 +31,7 @@
   line-height: 150%;
   margin-left: 60px;
   margin-top: 7px;
-  width: 390px;
+  max-width: 390px;
 }
 
 @include desktop-width-min {
@@ -40,11 +40,27 @@
   }
 }
 
+@include desktop-brackpoint-layout {
+  .form-container {
+    background-position: center -18px;
+  }
+}
+
+@include desktop-width-form {
+  .form-container__title {
+    width: 350px;
+  }
+
+  .form-container__description {
+    width: 350px;
+  }
+}
+
 @include tablet-width-max {
   .form-container {
     min-height: 805px;
-    background-size: 1481px 987px;
-    background-position: -502px -12px;
+    background-size: cover;
+    background-position: center;
   }
 
   .form-container__wrapper {
@@ -71,12 +87,18 @@
   }
 }
 
+@include tablet-brackpoint-layout {
+  .form-container {
+    background-size: 1481px 987px;
+    background-position: -502px -12px;
+  }
+}
+
 @include mobile-width-max {
   .form-container {
     min-height: 760px;
-    background-size: 1209px 806px;
-    background-position: -485px -46px;
-    background-color: $color-blue-haze;
+    background-size: cover;
+    background-position: center;
   }
 
   .form-container__wrapper {
@@ -95,5 +117,12 @@
     width: 100%;
     line-height: 140%;
     margin-top: 11px;
+  }
+}
+
+@include mobile-brackpoint-layout {
+  .form-container {
+    background-size: 1209px 806px;
+    background-position: -485px -46px;
   }
 }

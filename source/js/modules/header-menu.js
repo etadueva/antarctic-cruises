@@ -1,11 +1,13 @@
 let button = document.querySelector('.page-header__button');
 let logo = document.querySelector('.page-header__logo');
 let header = document.querySelector('.page-header');
+let wrapperBackgroun = document.querySelector('.wrapper__background-image');
 let listMenu = document.querySelector('.page-header__list');
 let links = document.querySelectorAll('.page-header__link');
 let items = document.querySelectorAll('.page-header__item');
 let wrapper = document.querySelector('.wrapper');
 let wrapperMenu = document.querySelector('.page-header__wrapper');
+let wrapperOverlay = document.querySelector('.wrapper__overlay');
 
 const clickOutside = (e) => {
   let headerOpen = document.querySelector('.page-header--open');
@@ -25,6 +27,7 @@ const closeMenu = () => {
   listMenu.classList.remove('page-header__list--open');
   wrapper.classList.remove('wrapper--open');
   wrapperMenu.classList.remove('page-header__wrapper--open');
+  wrapperOverlay.classList.remove('wrapper__overlay--open');
   links.forEach((element) => {
     element.classList.add('page-header__link--close');
     element.classList.remove('page-header__link--open');
@@ -48,6 +51,7 @@ const openMenu = () => {
   listMenu.classList.add('page-header__list--open');
   wrapper.classList.add('wrapper--open');
   wrapperMenu.classList.add('page-header__wrapper--open');
+  wrapperOverlay.classList.add('wrapper__overlay--open');
   links.forEach((element) => {
     element.classList.remove('page-header__link--close');
     element.classList.add('page-header__link--open');
@@ -62,6 +66,7 @@ const openMenu = () => {
 
 const switchMenu = () => {
   header.classList.remove('page-header--nojs');
+  wrapperBackgroun.classList.remove('wrapper__background-image--nojs');
 
   button.addEventListener('click', () => {
     if (button.classList.contains('page-header__button--close')) {

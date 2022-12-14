@@ -49,8 +49,10 @@
   &--astoria,
   &--elaine {
     background-image: url("../img/catalog/background-astoria.jpg");
-    background-position: -116px 0;
-    background-size: 503px 386px;
+    background-size: cover;
+    background-position: center;
+    // background-position: -116px 0;
+    // background-size: 503px 386px;
 
     @include retina {
       background-image: url("../img/catalog/background-astoria@2x.jpg");
@@ -59,8 +61,10 @@
 
   &--atlantis {
     background: url("../img/catalog/background-atlantis.jpg");
-    background-size: 515px 386px;
-    background-position: -128px;
+    background-size: cover;
+    background-position: center;
+    // background-size: 515px 386px;
+    // background-position: -128px;
 
     @include retina {
       background-image: url("../img/catalog/background-atlantis@2x.jpg");
@@ -69,8 +73,10 @@
 
   &--odysseus {
     background-image: url("../img/catalog/background-odysseus.jpg");
-    background-size: 560px 420px;
-    background-position: -120px 0;
+    background-size: cover;
+    background-position: center;
+    // background-size: 560px 420px;
+    // background-position: -120px 0;
 
     @include retina {
       background-image: url("../img/catalog/background-odysseus@2x.jpg");
@@ -79,8 +85,10 @@
 
   &--olympia {
     background-image: url("../img/catalog/background-olympia.jpg");
-    background-size: 553px 415px;
-    background-position: -117px 0;
+    // background-size: 553px 415px;
+    // background-position: -117px 0;
+    background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url("../img/catalog/background-olympia@2x.jpg");
@@ -89,8 +97,10 @@
 
   &--aurora {
     background-image: url("../img/catalog/background-aurora.jpg");
-    background-size: 515px 386px;
-    background-position: -107px 0;
+    // background-size: 515px 386px;
+    // background-position: -107px 0;
+    background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url("../img/catalog/background-aurora@2x.jpg");
@@ -99,8 +109,10 @@
 
   &--leonor {
     background-image: url("../img/catalog/background-leonor.jpg");
-    background-size: 515px 386px;
-    background-position: -147px 0;
+    // background-size: 515px 386px;
+    // background-position: -147px 0;
+    background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url("../img/catalog/background-leonor@2x.jpg");
@@ -109,8 +121,10 @@
 
   &--minion-1 {
     background-image: url("../img/catalog/background-minion-1.jpg");
-    background-size: 696px 522px;
-    background-position: -178px 0;
+    // background-size: 696px 522px;
+    // background-position: -178px 0;
+    background-size: cover;
+    background-position: center;
 
     @include retina {
       background-image: url("../img/catalog/background-minion-1@2x.jpg");

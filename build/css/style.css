@@ -1,33 +1,33 @@
 @font-face {
-  font-style: bold;
-  font-weight: 700;
   font-family: "Montserrat";
-  font-display: swap;
   src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
 }
 
 @font-face {
-  font-style: semibold;
-  font-weight: 600;
   font-family: "Montserrat";
-  font-display: swap;
   src: url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: semibold;
+  font-display: swap;
 }
 
 @font-face {
-  font-style: medium;
-  font-weight: 500;
   font-family: "Montserrat";
-  font-display: swap;
   src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+  font-display: swap;
 }
 
 @font-face {
-  font-style: regular;
-  font-weight: 400;
   font-family: "Montserrat";
-  font-display: swap;
   src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: regular;
+  font-display: swap;
 }
 
 *,
@@ -41,7 +41,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100%;
 }
 
 html {
@@ -1160,15 +1160,16 @@ button.swiper-pagination-bullet {
 
 .advantages {
   min-height: 562px;
-  background-image: url("../img/advantages-background/background-advantages.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(227, 236, 246, 0.9)), color-stop(50%, rgba(227, 236, 246, 0.9))), url("../img/advantages-background/background-advantages.jpg");
+  background: -o-linear-gradient(top, rgba(227, 236, 246, 0.9) 50%, rgba(227, 236, 246, 0.9) 50%), url("../img/advantages-background/background-advantages.jpg");
+  background: linear-gradient(180deg, rgba(227, 236, 246, 0.9) 50%, rgba(227, 236, 246, 0.9) 50%), url("../img/advantages-background/background-advantages.jpg");
   background-color: #e3ecf6;
   background-repeat: no-repeat;
-  background-size: 1366px;
+  background-size: cover;
   background-position: center;
 }
 
 .advantages__wrapper {
-  background-color: rgba(227, 236, 246, 0.9);
   padding-left: 103px;
   padding-right: 103px;
   min-height: 562px;
@@ -1399,44 +1400,44 @@ button.swiper-pagination-bullet {
 .catalog__item-cover--astoria,
 .catalog__item-cover--elaine {
   background-image: url("../img/catalog/background-astoria.jpg");
-  background-position: -116px 0;
-  background-size: 503px 386px;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--atlantis {
   background: url("../img/catalog/background-atlantis.jpg");
-  background-size: 515px 386px;
-  background-position: -128px;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--odysseus {
   background-image: url("../img/catalog/background-odysseus.jpg");
-  background-size: 560px 420px;
-  background-position: -120px 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--olympia {
   background-image: url("../img/catalog/background-olympia.jpg");
-  background-size: 553px 415px;
-  background-position: -117px 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--aurora {
   background-image: url("../img/catalog/background-aurora.jpg");
-  background-size: 515px 386px;
-  background-position: -107px 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--leonor {
   background-image: url("../img/catalog/background-leonor.jpg");
-  background-size: 515px 386px;
-  background-position: -147px 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-cover--minion-1 {
   background-image: url("../img/catalog/background-minion-1.jpg");
-  background-size: 696px 522px;
-  background-position: -178px 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .catalog__item-content {
@@ -1560,23 +1561,25 @@ button.swiper-pagination-bullet {
   background: -o-linear-gradient(top, rgb(55, 119, 198) 99%, rgb(249, 251, 253) 100%);
   background: linear-gradient(180deg, rgb(55, 119, 198) 99%, rgb(249, 251, 253) 100%);
   background-size: auto 655px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  min-height: 100%;
 }
 
 .wrapper__background-image {
   background-image: url("../img/promo-background/background-promo.jpg");
-  background-size: 1366px 1025px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center -188px;
+  height: 100%;
 }
 
 .form-container {
   min-height: 555px;
   background-color: #a1cbf5;
   background-image: url("../img/form-background/background-form.jpg");
-  background-size: 1366px 911px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -18px;
+  background-position: center;
 }
 
 .form-container__wrapper {
@@ -1603,7 +1606,7 @@ button.swiper-pagination-bullet {
   line-height: 150%;
   margin-left: 60px;
   margin-top: 7px;
-  width: 390px;
+  max-width: 390px;
 }
 
 .form {
@@ -1732,7 +1735,9 @@ button.swiper-pagination-bullet {
 }
 
 .contacts {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   min-height: 546px;
+  background-color: #f9fbfd;
 }
 
 .contacts__wrapper {
@@ -1931,8 +1936,6 @@ button.swiper-pagination-bullet {
 
   .advantages {
     min-height: 588px;
-    background-size: auto 588px;
-    background-color: #66a8e0;
   }
 
   .advantages__wrapper {
@@ -2123,14 +2126,14 @@ button.swiper-pagination-bullet {
   }
 
   .wrapper__background-image {
-    background-size: 851px 638px;
+    background-size: 100% auto;
     background-position: center 0;
   }
 
   .form-container {
     min-height: 805px;
-    background-size: 1481px 987px;
-    background-position: -502px -12px;
+    background-size: cover;
+    background-position: center;
   }
 
   .form-container__wrapper {
@@ -2282,11 +2285,6 @@ button.swiper-pagination-bullet {
 
   .social-list__item--yandex-zen {
     margin-right: 18px;
-  }
-
-  .advantages {
-    background-size: auto 997px;
-    background-position: -10px;
   }
 
   .advantages__wrapper {
@@ -2575,6 +2573,19 @@ button.swiper-pagination-bullet {
     background-size: 757px 568px;
   }
 
+  .wrapper__background-image--nojs {
+    background-position: center 345px;
+  }
+
+  .wrapper__overlay--open {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(99%, rgba(0, 0, 0, 0.5)), color-stop(99%, rgba(0, 0, 0, 0.5)));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 99%, rgba(0, 0, 0, 0.5) 99%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 99%, rgba(0, 0, 0, 0.5) 99%);
+  }
+
   .wrapper--open {
     position: fixed;
     overflow-y: hidden;
@@ -2582,9 +2593,8 @@ button.swiper-pagination-bullet {
 
   .form-container {
     min-height: 760px;
-    background-size: 1209px 806px;
-    background-position: -485px -46px;
-    background-color: #adacba;
+    background-size: cover;
+    background-position: center;
   }
 
   .form-container__wrapper {
@@ -2672,8 +2682,8 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 316px;
     margin-top: 36px;
-    background-size: 550px 316px;
-    background-position: -130px 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .contacts__title {
@@ -2697,6 +2707,38 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 1117px) and (min-width: 1024px) {
+  .wrapper__background-image {
+    background-size: auto 838px;
+  }
+}
+
+@media (max-width: 851px) and (min-width: 767px) {
+  .wrapper__background-image {
+    background-size: auto 638px;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1366px) {
+  .form-container {
+    background-position: center -18px;
+  }
+}
+
+@media (max-width: 1222px) and (min-width: 1024px) {
+  .form-container__title {
+    width: 350px;
+  }
+
+  .form-container__description {
+    width: 350px;
+  }
+
+  .form {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1023px) and (min-width: 767px) {
   .form-container__description br {
     display: none;
@@ -2704,6 +2746,25 @@ button.swiper-pagination-bullet {
 
   .form__description br {
     display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+  .form-container {
+    background-size: 1481px 987px;
+    background-position: -502px -12px;
+  }
+}
+
+@media (max-width: 320px) and (min-width: 320px) {
+  .form-container {
+    background-size: 1209px 806px;
+    background-position: -485px -46px;
+  }
+
+  .contacts__map {
+    background-size: 550px 316px;
+    background-position: -130px 0;
   }
 }
 
@@ -2729,7 +2790,7 @@ button.swiper-pagination-bullet {
   }
 
   .form__input:hover:not(.focus-visible) {
-    opacity: 0.5;
+    outline: 2px solid #3270c6;
   }
 
   .form__input--checkbox:hover:not(.focus-visible) {
@@ -2743,7 +2804,9 @@ button.swiper-pagination-bullet {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages {
-    background-image: url("../img/advantages-background/background-advantages@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(227, 236, 246, 0.9)), color-stop(50%, rgba(227, 236, 246, 0.9))), url("../img/advantages-background/background-advantages@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(227, 236, 246, 0.9) 50%, rgba(227, 236, 246, 0.9) 50%), url("../img/advantages-background/background-advantages@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(227, 236, 246, 0.9) 50%, rgba(227, 236, 246, 0.9) 50%), url("../img/advantages-background/background-advantages@2x.jpg");
   }
 
   .catalog__item-cover--astoria,

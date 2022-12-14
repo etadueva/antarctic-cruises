@@ -7,43 +7,45 @@
     <meta name="description" content="Круизы в Антарктику">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-semi-bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-semi-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <div class="wrapper__background-image">
-        <header class="page-header page-header--close page-header--nojs">
-          <div class="page-header__wrapper container page-header__wrapper--close">
-            <div class="page-header__content-header">
-              <a class="page-header__link-logo">
-                <h3 class="visually-hidden">Логотип компании</h3>
-                <svg class="page-header__logo page-header__logo--close" width="70" height="38">
-                  <use href="./img/sprite.svg#logo"></use>
-                </svg>
-              </a>
-              <button class="page-header__button page-header__button--close" type="button">
-                <span class="visually-hidden">Кнопка меню</span>
-              </button>
+      <div class="wrapper__background-image wrapper__background-image--nojs">
+        <div class="wrapper__overlay">
+          <header class="page-header page-header--close page-header--nojs">
+            <div class="page-header__wrapper container page-header__wrapper--close">
+              <div class="page-header__content-header">
+                <a class="page-header__link-logo">
+                  <h3 class="visually-hidden">Логотип компании</h3>
+                  <svg class="page-header__logo page-header__logo--close" width="70" height="38">
+                    <use href="./img/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+                <button class="page-header__button page-header__button--close" type="button">
+                  <span class="visually-hidden">Кнопка меню</span>
+                </button>
+              </div>
+              <ul class="page-header__list page-header__list--close">
+                <li class="page-header__item page-header__item--close">
+                  <a class="page-header__link page-header__link--close" href="#advantages">Преимущества</a>
+                </li>
+                <li class="page-header__item page-header__item--close">
+                  <a class="page-header__link page-header__link--close" href="#catalog">Направления</a>
+                </li>
+                <li class="page-header__item page-header__item--close">
+                  <a class="page-header__link page-header__link--close" href="#catalog">Ближайшие круизы</a>
+                </li>
+                <li class="page-header__item page-header__item--close">
+                  <a class="page-header__link page-header__link--close" href="#contacts">Контакты</a>
+                </li>
+              </ul>
             </div>
-            <ul class="page-header__list page-header__list--close">
-              <li class="page-header__item page-header__item--close">
-                <a class="page-header__link page-header__link--close" href="#advantages">Преимущества</a>
-              </li>
-              <li class="page-header__item page-header__item--close">
-                <a class="page-header__link page-header__link--close" href="#catalog">Направления</a>
-              </li>
-              <li class="page-header__item page-header__item--close">
-                <a class="page-header__link page-header__link--close" href="#catalog">Ближайшие круизы</a>
-              </li>
-              <li class="page-header__item page-header__item--close">
-                <a class="page-header__link page-header__link--close" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </header>
+          </header>
+        </div>
         <main>
           <section class="promo">
             <div class="promo__wrapper container">
@@ -108,19 +110,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Астория”</h3>
                     <ul class="catalog__content-list">
-                        <li class="catalor__content-item">
+                        <li class="catalog__content-item">
                           <h4 class="catalog__content-title">Маршрут</h4>
                           <span class="catalog__content-description">Аргентина - Фолклендские острова - Антарктида</span>
                         </li>
-                        <li class="catalor__content-item">
+                        <li class="catalog__content-item">
                           <h4 class="catalog__content-title">Порт отправления</h4>
                           <span class="catalog__content-description">Ушуайя</span>
                         </li>
-                        <li class="catalor__content-item">
+                        <li class="catalog__content-item">
                           <h4 class="catalog__content-title">Продолжительность</h4>
                           <span class="catalog__content-description">11 дней</span>
                         </li>
-                        <li class="catalor__content-item">
+                        <li class="catalog__content-item">
                           <h4 class="catalog__content-title">Цена</h4>
                           <span class="catalog__content-description">от 11500 $</span>
                         </li>
@@ -137,19 +139,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Элайн”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Аргентина - Фолклендские острова - Антарктида - Чили</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Буэнос-Айрес</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">20 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 14500 $</span>
                       </li>
@@ -166,19 +168,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Атлантис”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Ушуайя</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">15 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 14500 $</span>
                       </li>
@@ -195,19 +197,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Одиссей”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Чили - Антарктида</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Пунта-Аренас</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">13 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 9700 $</span>
                       </li>
@@ -224,19 +226,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Олимпия”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Ушуайя</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">21 день</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 18600 $</span>
                       </li>
@@ -253,19 +255,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Аврора”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Аргентина - Антарктида - Чили</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Ушуайя</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">14 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 11700 $</span>
                       </li>
@@ -282,19 +284,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Леонор”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Чили - Южная Георгия - Антарктида - Аргентина</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Пунта-Аренас</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">17 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 12500 $</span>
                       </li>
@@ -311,19 +313,19 @@
                   <div class="catalog__item-content">
                     <h3 class="catalog__title-item catalog__title-item--content">Круиз “Минион - 1”</h3>
                     <ul class="catalog__content-list">
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Маршрут</h4>
                         <span class="catalog__content-description">Аргентина - Антарктида</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Порт отправления</h4>
                         <span class="catalog__content-description">Ушуайя</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Продолжительность</h4>
                         <span class="catalog__content-description">11 дней</span>
                       </li>
-                      <li class="catalor__content-item">
+                      <li class="catalog__content-item">
                         <h4 class="catalog__content-title">Цена</h4>
                         <span class="catalog__content-description">от 12300 $</span>
                       </li>
@@ -349,7 +351,7 @@
                     <input class="form__input" type="text" name="user-name" placeholder="Имя" required>
                   </label>
                   <label class="form__meaning">
-                    <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" pattern="[8]{1}[9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" required>
+                    <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{11}" required>
                   </label>
                   <label class="form__meaning">
                     <input class="form__input" type="email" name="user-email" pattern="([A-z0-9_.-]{1,})[@]([A-z0-9_.-]{1,})[.]([A-z]{2,8})" placeholder="Email">
@@ -442,7 +444,7 @@
             </ul>
           </div>
         </footer>
-        </div>
+      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

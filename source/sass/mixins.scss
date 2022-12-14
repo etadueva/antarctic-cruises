@@ -69,6 +69,46 @@
   }
 }
 
+
+@mixin desktop-brackpoint-layout {
+  @media (max-width: ($desktop-brackpoint)) and (min-width: ($desktop-brackpoint)) {
+    @content;
+  }
+}
+
+@mixin tablet-brackpoint-layout {
+  @media (max-width: ($tablet-brackpoint)) and (min-width: ($tablet-brackpoint)) {
+    @content;
+  }
+}
+
+@mixin mobile-brackpoint-layout {
+  @media (max-width: ($mobile-brackpoint)) and (min-width: ($mobile-brackpoint)) {
+    @content;
+  }
+}
+
+
+@mixin desktop-width-form {
+  @media (max-width: ($desktop-width-form)) and (min-width: ($desktop-width)) {
+    @content;
+  }
+}
+
+
+@mixin desktop-background-min {
+  @media (max-width: ($desktop-width-background)) and (min-width: ($desktop-width)) {
+    @content;
+  }
+}
+
+@mixin tablet-background-min {
+  @media (max-width: ($tablet-width-background)) and (min-width: ($mobile-width-max)) {
+    @content;
+  }
+}
+
+
 @mixin desktop-width-gap-max {
   @media (max-width: ($desktop-width-gap-max)) {
     @content;

@@ -1,5 +1,7 @@
 .contacts {
+  font-family: $ff-montserrat;
   min-height: 546px;
+  background-color: $color-alice-blue;
 }
 
 .contacts__wrapper {
@@ -150,11 +152,18 @@
     width: 100%;
     height: 316px;
     margin-top: 36px;
-    background-size: 550px 316px;
-    background-position: -130px 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .contacts__title {
     margin-top: 57px;
+  }
+}
+
+@include mobile-brackpoint-layout {
+  .contacts__map {
+    background-size: 550px 316px;
+    background-position: -130px 0;
   }
 }
