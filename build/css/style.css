@@ -1563,6 +1563,16 @@ button.swiper-pagination-bullet {
   background-size: auto 655px;
   background-repeat: repeat-x;
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .wrapper__background-image {
@@ -2249,7 +2259,7 @@ button.swiper-pagination-bullet {
 
   .footer-container__list {
     margin-left: 2px;
-    margin-top: 28px;
+    margin-top: 23px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
