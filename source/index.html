@@ -7,10 +7,10 @@
     <meta name="description" content="Круизы в Антарктику">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-semi-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-semi-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -343,26 +343,28 @@
                 <span class="form-container__description">Забронируйте тур <br>за&nbsp;3-6&nbsp;месяцев
                   до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</span>
               </div>
-              <form class="form" action="https://echo.htmlacademy.ru">
-                <span class="form__description">Оставьте заявку <br>и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</span>
-                <fieldset class="form__group">
-                  <legend class="visually-hidden">Данные пользователя.</legend>
-                  <label class="form__meaning">
-                    <input class="form__input" type="text" name="user-name" placeholder="Имя" required>
-                  </label>
-                  <label class="form__meaning">
-                    <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{11}" required>
-                  </label>
-                  <label class="form__meaning">
-                    <input class="form__input" type="email" name="user-email" pattern="([A-z0-9_.-]{1,})[@]([A-z0-9_.-]{1,})[.]([A-z]{2,8})" placeholder="Email">
-                  </label>
-                  <label class="form__meaning form__meaning--checkbox">
-                    <input class="form__input form__input--checkbox" type="checkbox" name="consent-to-data-processing" required checked>
-                    <span class="form__text-checkbox">Я согласен на&nbsp;обработку <br>моих персональных данных</span>
-                  </label>
-                  <button class="form__button" type="submit">Оставить заявку</button>
-                </fieldset>
-              </form>
+              <div>
+                <form class="form" action="https://echo.htmlacademy.ru">
+                  <span class="form__description">Оставьте заявку <br>и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</span>
+                  <fieldset class="form__group">
+                    <legend class="visually-hidden">Данные пользователя.</legend>
+                    <label class="form__meaning">
+                      <input class="form__input" type="text" name="user-name" placeholder="Имя" required>
+                    </label>
+                    <label class="form__meaning">
+                      <input class="form__input" type="tel" name="user-phone" placeholder="Телефон" pattern="[^A-Za-zА-Яа-яЁё]*" required>
+                    </label>
+                    <label class="form__meaning">
+                      <input class="form__input" type="email" name="user-email" pattern="([A-z0-9_.-]{1,})[@]([A-z0-9_.-]{1,})[.]([A-z]{2,8})" placeholder="Email">
+                    </label>
+                    <label class="form__meaning form__meaning--checkbox">
+                      <input class="form__input form__input--checkbox" type="checkbox" name="consent-to-data-processing" required checked>
+                      <span class="form__text-checkbox">Я согласен на&nbsp;обработку <br>моих персональных данных</span>
+                    </label>
+                    <button class="form__button" type="submit">Оставить заявку</button>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </section>
           <section class="contacts" id="contacts">

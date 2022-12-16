@@ -14,6 +14,7 @@
   text-align: center;
   margin: 0;
   padding-top: 85px;
+  font-family: $ff-montserrat;
 }
 
 .catalog__list {
@@ -164,6 +165,7 @@
 
 .catalog__title-item {
   color: $color-alice-blue;
+  font-family: $ff-montserrat;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
@@ -193,10 +195,12 @@
   margin: 0;
   margin-bottom: 2px;
   font-weight: 500;
+  font-family: $ff-montserrat;
 }
 
 .catalog__content-description {
   font-weight: 400;
+  font-family: $ff-montserrat;
 }
 
 .catalog__item-button {

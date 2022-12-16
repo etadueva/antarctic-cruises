@@ -18,6 +18,7 @@
 }
 
 .advantages__title {
+  font-family: $ff-montserrat;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -45,6 +46,7 @@
 }
 
 .advantages__name {
+  font-family: $ff-montserrat;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
@@ -53,6 +55,7 @@
 }
 
 .advantages__description {
+  font-family: $ff-montserrat;
   font-size: 14px;
   line-height: 140%;
   margin: 0;

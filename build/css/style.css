@@ -1117,6 +1117,7 @@ button.swiper-pagination-bullet {
 }
 
 .footer-container__link {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   color: #f9fbfd;
 }
 
@@ -1177,6 +1178,7 @@ button.swiper-pagination-bullet {
 }
 
 .advantages__title {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1212,6 +1214,7 @@ button.swiper-pagination-bullet {
 }
 
 .advantages__name {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
@@ -1220,6 +1223,7 @@ button.swiper-pagination-bullet {
 }
 
 .advantages__description {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 140%;
   margin: 0;
@@ -1275,6 +1279,7 @@ button.swiper-pagination-bullet {
 }
 
 .page-header__link {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   color: #f9fbfd;
   font-weight: 500;
   text-shadow: 0 4px 4px rgba(1, 28, 64, 0.25);
@@ -1291,6 +1296,7 @@ button.swiper-pagination-bullet {
 }
 
 .promo__title {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   color: #f9fbfd;
   font-size: 54px;
   text-shadow: 0 4px 4px rgba(1, 28, 64, 0.25);
@@ -1300,6 +1306,7 @@ button.swiper-pagination-bullet {
 }
 
 .promo__desctription {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   color: #f9fbfd;
   font-size: 20px;
   text-shadow: 0 4px 4px rgba(1, 28, 64, 0.25);
@@ -1329,6 +1336,7 @@ button.swiper-pagination-bullet {
 }
 
 .journeys__title {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 150%;
@@ -1347,6 +1355,7 @@ button.swiper-pagination-bullet {
 
 .journeys__text {
   margin-top: 24px;
+  font-family: "Montserrat", "Tahoma", sans-serif;
 }
 
 .catalog {
@@ -1365,6 +1374,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   margin: 0;
   padding-top: 85px;
+  font-family: "Montserrat", "Tahoma", sans-serif;
 }
 
 .catalog__list {
@@ -1473,6 +1483,7 @@ button.swiper-pagination-bullet {
 
 .catalog__title-item {
   color: #f9fbfd;
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
@@ -1502,10 +1513,12 @@ button.swiper-pagination-bullet {
   margin: 0;
   margin-bottom: 2px;
   font-weight: 500;
+  font-family: "Montserrat", "Tahoma", sans-serif;
 }
 
 .catalog__content-description {
   font-weight: 400;
+  font-family: "Montserrat", "Tahoma", sans-serif;
 }
 
 .catalog__item-button {
@@ -1617,6 +1630,7 @@ button.swiper-pagination-bullet {
 }
 
 .form-container__title {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 40px;
   line-height: 150%;
   margin: 213px auto 0 60px;
@@ -1624,6 +1638,7 @@ button.swiper-pagination-bullet {
 }
 
 .form-container__description {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   display: block;
   font-size: 18px;
   line-height: 150%;
@@ -1643,6 +1658,7 @@ button.swiper-pagination-bullet {
 }
 
 .form__description {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 500;
@@ -1663,6 +1679,7 @@ button.swiper-pagination-bullet {
 }
 
 .form__meaning {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   width: 100%;
   min-height: 43px;
   margin-bottom: 20px;
@@ -1736,6 +1753,7 @@ button.swiper-pagination-bullet {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  background-color: #f9fbfd;
 }
 
 .form__button.focus-visible:focus {
@@ -1803,6 +1821,7 @@ button.swiper-pagination-bullet {
   margin: 0;
   margin-top: 194px;
   font-weight: 500;
+  font-family: "Montserrat", "Tahoma", sans-serif;
 }
 
 .contacts__list {
@@ -1828,6 +1847,7 @@ button.swiper-pagination-bullet {
 }
 
 .contacts__info {
+  font-family: "Montserrat", "Tahoma", sans-serif;
   margin-left: 10px;
   margin-top: 1px;
 }
@@ -2644,7 +2664,7 @@ button.swiper-pagination-bullet {
   .form-container__description {
     font-size: 16px;
     width: 100%;
-    line-height: 140%;
+    line-height: 138%;
     margin-top: 11px;
   }
 

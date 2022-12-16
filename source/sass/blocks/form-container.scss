@@ -19,6 +19,7 @@
 }
 
 .form-container__title {
+  font-family: $ff-montserrat;
   font-size: 40px;
   line-height: 150%;
   margin: 213px auto 0 60px;
@@ -26,6 +27,7 @@
 }
 
 .form-container__description {
+  font-family: $ff-montserrat;
   display: block;
   font-size: 18px;
   line-height: 150%;
@@ -115,7 +117,7 @@
   .form-container__description {
     font-size: 16px;
     width: 100%;
-    line-height: 140%;
+    line-height: 138%;
     margin-top: 11px;
   }
 }

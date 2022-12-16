@@ -14,6 +14,7 @@
 }
 
 .journeys__title {
+  font-family: $ff-montserrat;
   font-size: 28px;
   font-weight: 600;
   line-height: 150%;
@@ -32,6 +33,7 @@
 
 .journeys__text {
   margin-top: 24px;
+  font-family: $ff-montserrat;
 }
 
 @include tablet-width-max {
